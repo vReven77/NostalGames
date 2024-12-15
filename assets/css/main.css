@@ -1,0 +1,493 @@
+/* Font Family from fonts.google.com */
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat.ttf');
+}
+
+
+* {
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #111;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #222;
+    z-index: 2;
+}
+
+.header-logo {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	align-items: center;
+}
+
+.header-logo > h1 > a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-shadow: 0 0 3px white;
+    transition: 0.2s;
+}
+
+.header-logo > h1 > a:hover {
+    text-shadow: 0 0 5px white;
+}
+
+.header-logo img {
+    height: 75px;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.header-nav > a, .header-nav-dropdown p {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.2s;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+.header-nav-input {
+    background-color: #222;
+    border-radius: 5px;
+    border: 1px solid #555;
+    padding: 5px 10px;
+}
+
+.header-nav-input i {
+    color: white;
+    margin-right: 5px;
+    font-size: 1rem;
+}
+
+.header-nav-input input {
+    color: white;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.header-nav-input:focus-within {
+    border: 1px solid gold;
+}
+
+.header-nav > a:hover, .header-nav-dropdown p:hover {
+    text-shadow: 0 0 3px white;
+}
+
+.header-nav-dropdown {
+    position: relative;
+}
+
+.header-nav-dropdown-content {
+    background-color: #222;
+    padding: 5px 10px;
+    position: absolute;
+}
+
+.header-nav-dropdown-content-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.header-nav-dropdown-content-nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.header-nav-dropdown-content-nav a:hover {
+    text-shadow: 0 0 3px white;
+}
+
+.header-nav-dropdown-content {
+    display: none;
+}
+
+.header-nav-dropdown:hover .header-nav-dropdown-content {
+    display: block;
+}
+
+.main {
+	
+}
+
+html::-webkit-scrollbar {
+    background-color: #333;
+    width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+#start {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-texts {
+    margin-top: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-texts h2 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 800;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.start-texts > h2 > span, .start-texts > h3 > span {
+    color: gold;
+    text-shadow: 0 0 3px gold;
+}
+
+.start-texts h3 {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 500;
+    width: 50vw;
+    margin-top: 50px;
+}
+
+.start-actions {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.start-actions > a {
+    background-color: gold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    box-shadow: 0 0 3px gold;
+    transition: 0.2s;
+    font-weight: 700;
+}
+
+.start-actions > a:hover {
+    box-shadow: 0 0 10px gold;
+}
+
+.start-actions > i {
+    margin-top: 20px;
+    color: white;
+    font-size: 3rem;
+    animation: arrow-jump 2s infinite;
+}
+
+@keyframes arrow-jump {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+      }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+section {
+    border-top: 1px solid #555;
+    padding: 30px;
+}
+
+section:nth-child(2) {
+    margin-top: 100px;
+}
+
+section:first-child {
+    border: none;
+}
+
+.section-header {
+    color: white;
+    font-size: 2rem;
+    padding: 0 0 30px 0;
+    font-style: italic;
+    word-break: break-all;
+    word-wrap: break-word;
+	text-align: center;
+}
+
+.whatwedo-content {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+	
+}
+
+.whatwedo-content-deco img {
+    max-width: 400px;
+	height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    filter: hue-rotate(180deg);
+}
+
+.whatwedo-content-itemlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+	gap: 20px;
+}
+
+.whatwedo-content-item {
+    max-width: 400px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.whatwedo-content i {
+    color: gold;
+    font-size: 3rem;
+}
+
+.whatwedo-content h5 {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.whatwedo-content p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.currentgames-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.currentgames-content-item {
+    border-radius: 5px;
+    border: 1px solid #555;
+    max-width: 350px;
+    min-height: 400px;
+    padding: 20px;
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-shrink: 1;
+    flex-grow: 1;
+	gap: 10px;
+}
+
+.currentgames-content-item img {
+    width: 100%;
+	height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.currentgames-content-item h5 {
+    color: gold;
+    font-size: 1.5rem;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.currentgames-content-item p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    line-height: 20px;
+}
+
+.currentgames-content-item a {
+    background-color: gold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    box-shadow: 0 0 3px gold;
+    transition: 0.2s;
+    width: max-content;
+    font-weight: 700;
+}
+
+.currentgames-content-item a:hover {
+    box-shadow: 0 0 10px gold;
+}
+
+.footer {
+    padding: 30px;
+    border-top: 1px solid #333;
+}
+
+.footer-header {
+    padding: 0 0 20px 0;
+}
+
+.footer-header > h1 > a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-shadow: 0 0 3px white;
+    transition: 0.2s;
+    font-size: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.footer-content nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-content nav a {
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.2s;
+}
+
+.footer-content nav a:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 950px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .start-texts {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .start-texts h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 530px) {
+	
+    .header {
+        position: relative;
+    }
+
+    .header-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .start-texts h2 {
+        font-size: 2rem;
+    }
+
+    .start-texts h3 {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    section:nth-child(2) {
+        margin-top: 50px;
+    }
+	
+	.whatwedo-content-deco img {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 450px) {
+    .footer-header > h1 > a {
+        font-size: 1.5rem;
+        word-break: break-all;
+        word-wrap: break-word;
+    }
+
+    .header > .header-logo > h1 {
+        display: none;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        word-break: break-all;
+        word-wrap: break-word;
+    }
+		
+	html, body {
+		overflow-x: hidden;
+	}
+}
+
+@media screen and (max-width: 300px) {
+    .header-nav-input input {
+        display: none;
+    }
+
+    .header-nav-input i {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 220px) {
+    .currentgames-content-item p, .whatwedo-content-item p {
+        word-break: break-all;
+        word-wrap: break-word;
+    }
+}

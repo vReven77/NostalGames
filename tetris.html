@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/games.css">
+    <link href="./assets/ionicons/ionicons.css" rel="stylesheet" type="text/css">
+    <title>NostalGames - Tetris</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+			<img src="./assets/img/tetris-logo.png" alt="Tetris Logo">
+            <h1><a href="#">NostalGames</a></h1>
+        </div>
+        <nav class="header-nav">
+            <a href="./index.html"><i class="ion-android-home"></i> Home</a>
+            <div class="header-nav-dropdown">
+                <p><i class="ion-arrow-down-b"></i> Games</p>
+
+                <div class="header-nav-dropdown-content">
+                    <nav class="header-nav-dropdown-content-nav">
+                        <a href="#">Tetris</a>
+                        <a href="#">Pacman</a>
+                        <a href="#">Streetfighter</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="header-nav-input">
+                <i class="ion-android-search"></i>
+                <input placeholder="Suche...">
+            </div>
+        </nav>
+    </header>
+    
+    <div id="playtetris">
+        <a href="#"><i class="ion-close"></i></a>
+        <p>Falls es nicht richtig geladen hat, Seite neu laden!</p>
+        <iframe src="https://www.play-tetris-online.com/tetris-html5/" width="600px" height="600px" scrolling="no" frameborder="0"></iframe>
+    </div>
+
+    <main class="main">
+        <section id="start">
+            <div class="start-texts">
+                <h2>Tetris<br>Der <span>Klassiker</span> der Videospiele</h2>
+                <img src="./assets/img/retro-tetris.gif">
+            </div>
+
+            <div class="start-actions">
+                <a href="#playtetris">Spielen <i class="ion-arrow-right-c"></i></a>
+            
+                <i class="ion-arrow-up-c"></i>
+            </div>
+        </section>
+
+        <section id="einfuehrung">
+            <header class="section-header">
+                <h4>Einführung</h4>
+            </header>
+
+            <div class="einfuehrung-content">
+                <figure>
+                    <img src="./assets/img/Alexey_Pajitnov.jpg" alt="Alexey Pajitnov Picture">
+                    <figcaption>Alexey Leonidowitsch Pajitnov</figcaption>
+                </figure>
+
+                <ul>
+                    <li>Entwickler: Tetris wurde 1984 von Alexey Pajitnov in der Sowjetunion entwickelt.</li>
+                    <li>Spielprinzip: Der Spieler muss fallende geometrische Formen (Tetriminos) so drehen und platzieren, dass sie vollständige horizontale Linien bilden.</li>
+                    <li>Ziel: Das Ziel ist es, so lange wie möglich zu spielen, ohne dass sich die Tetriminos bis zum oberen Bildschirmrand stapeln.</li>
+                    <li>Punkte: Wenn eine Linie komplett gefüllt ist, wird sie entfernt und der Spieler erhält Punkte.</li>
+                    <li>Bedeutung: Tetris gilt als eines der einflussreichsten und erfolgreichsten Videospiele aller Zeiten.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="howtoplay">
+            <header class="section-header">
+                <h4>How To Play</h4>
+            </header>
+
+            <div class="howtoplay-content">
+                <table>
+                    <tr>
+                        <td><i class="fa-solid fa-square-caret-left"></i> / <i class="fa-solid fa-square-caret-right"></i></td>
+                        <td><i class="fa-solid fa-square-caret-up"></i></td>
+                        <td><i class="fa-solid fa-square-caret-down"></i></td>
+                        <td><span>SPACE</span></td>
+                    </tr>
+                    <tr>
+                        <td>Bewege das Tetromino</td>
+                        <td>Beschleunige das Fallen</td>
+                        <td>Drehe das Tetromino</td>
+                        <td>Beschleunige das Fallen drastisch</td>
+                    </tr>
+                </table>
+
+                <div class="howtoplay-content-texts">
+                    <p>Im Spiel erscheinen verschiedene geometrische Formen, die sogenannten Tetrominos, die sich auf das Spielfeld bewegen. Der Spieler dreht und platziert diese Formen, um vollständige Reihen zu bilden. Sobald eine Reihe vollständig ist, verschwindet sie, und der Spieler erhält Punkte. Je mehr Reihen gleichzeitig abgeräumt werden, desto mehr Punkte gibt es.</p>
+                    <hr>
+                    <h4>Jedes neue Level erhöht die Geschwindigkeit der fallenden Tetrominos – die Herausforderung steigt!</h6>    
+                </div>
+            </div>
+        </section>
+
+        <section id="story">
+            <header class="section-header">
+                <h4>Story</h4>
+            </header>
+
+            <div class="story-content">
+                <p>Tetris wurde von Alexey Pajitnov, einem russischen Informatiker, entwickelt und erstmals 1984 auf einem Computer in der Sowjetunion gespielt. Die Popularität des Spiels wuchs schnell, als es Ende der 1980er Jahre auf dem Game Boy veröffentlicht wurde und Millionen von Menschen weltweit erreichte.</p>
+            </div>
+        </section>
+
+        <section id="popularity">
+            <header class="section-header">
+                <h4>Wieso ist es so beliebt</h4>
+            </header>
+
+            <div class="popularity-content">
+                <ul>
+                    <li>Einfache, aber süchtig machende Spielmechanik: Tetris ist leicht zu erlernen und dennoch fordernd.</li>
+                    <li>Unerschöpflicher Wiederspielwert: Jedes Spiel ist einzigartig, wodurch es immer wieder Spaß macht.</li>
+                    <li>Fördert Reaktionsgeschwindigkeit: Spieler müssen schnell auf fallende Blöcke reagieren.</li>
+                    <li>Trainiert räumliches Denken: Das Drehen und Platzieren der Blöcke fordert das Vorstellungsvermögen.</li>
+                    <li>Verbessert Planungsfähigkeiten: Spieler müssen strategisch denken, um Reihen zu vervollständigen.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="fazit">
+            <header class="section-header">
+                <h4>Fazit</h4>
+            </header>
+
+            <div class="fazit-content">
+                <p>Tetris ist mehr als nur ein Spiel – es ist ein Kultklassiker, der Generationen von Spielern begeistert hat. Mit seiner einfachen Spielmechanik und der Herausforderung, immer schneller zu spielen, bleibt Tetris ein faszinierendes Beispiel für gutes Spieldesign und ist ein bedeutender Teil der Videospielgeschichte.</p>
+            </div>
+        </section>
+
+        <section id="memorys">
+            <header class="section-header">
+                <h4>Erinnerungen aufrischen</h4>
+            </header>
+
+            <div class="memorys-content">
+                <div class="memorys-content-list">
+                    <figure class="memorys-content-list-item" id="tetrisbild1">
+                        <a href="#memorys"></a>
+                        <a href="#tetrisbild1">
+                            <img src="./assets/img/tetris.png" alt="tetris image">
+                        </a>
+                        <figcaption>Kein JavaScript :( :( :(</figcaption>
+                    </figure>
+                    <figure class="memorys-content-list-item" id="tetrisbild1">
+                        <a href="#memorys"></a>
+                        <a href="#tetrisbild1">
+                            <img src="./assets/img/tetris.png" alt="tetris image">
+                        </a>
+                        <figcaption>Kein JavaScript :( :( :(</figcaption>
+                    </figure>
+                    <figure class="memorys-content-list-item" id="tetrisbild1">
+                        <a href="#memorys"></a>
+                        <a href="#tetrisbild1">
+                            <img src="./assets/img/tetris.png" alt="tetris image">
+                        </a>
+                        <figcaption>Kein JavaScript :( :( :(</figcaption>
+                    </figure>
+                    <figure class="memorys-content-list-item" id="tetrisbild1">
+                        <a href="#memorys"></a>
+                        <a href="#tetrisbild1">
+                            <img src="./assets/img/tetris.png" alt="tetris image">
+                        </a>
+                        <figcaption>Kein JavaScript :( :( :(</figcaption>
+                    </figure>
+                    <figure class="memorys-content-list-item" id="tetrisbild1">
+                        <a href="#memorys"></a>
+                        <a href="#tetrisbild1">
+                            <img src="./assets/img/tetris.png" alt="tetris image">
+                        </a>
+                        <figcaption>Kein JavaScript :( :( :(</figcaption>
+                    </figure>
+                    <figure class="memorys-content-list-item" id="tetrisbild1">
+                        <a href="#memorys"></a>
+                        <a href="#tetrisbild1">
+                            <img src="./assets/img/tetris.png" alt="tetris image">
+                        </a>
+                        <figcaption>Kein JavaScript :( :( :(</figcaption>
+                    </figure>
+                    <figure class="memorys-content-list-item" id="tetrisbild1">
+                        <a href="#memorys"></a>
+                        <a href="#tetrisbild1">
+                            <img src="./assets/img/tetris.png" alt="tetris image">
+                        </a>
+                        <figcaption>Kein JavaScript :( :( :(</figcaption>
+                    </figure>
+                    <figure class="memorys-content-list-item" id="tetrisbild1">
+                        <a href="#memorys"></a>
+                        <a href="#tetrisbild1">
+                            <img src="./assets/img/tetris.png" alt="tetris image">
+                        </a>
+                        <figcaption>Kein JavaScript :( :( :(</figcaption>
+                    </figure>
+                    <figure class="memorys-content-list-item" id="tetrisbild1">
+                        <a href="#memorys"></a>
+                        <a href="#tetrisbild1">
+                            <img src="./assets/img/tetris.png" alt="tetris image">
+                        </a>
+                        <figcaption>Kein JavaScript :( :( :(</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <header class="footer-header">
+            <h1><a href="#">NostalGames</a></h1>
+        </header>
+
+        <div class="footer-content">
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./tetris.html">Tetris</a>
+                <a href="#">Pacman</a>
+                <a href="#">Streetfighter</a>
+            </nav>
+            <nav>
+                <a href="#">Impressum</a>
+                <a href="#">Datenschutz</a>
+                <a href="#">Cookies</a>
+                <a href="#">AGB</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
