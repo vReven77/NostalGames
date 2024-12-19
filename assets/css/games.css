@@ -90,7 +90,8 @@ table {
 }
 
 /* Hover effect for table cells */
-.quick-content td:hover {
+/* Active and Focus for mobile */
+.quick-content td:hover, .quick-content td:active, .quick-content td:focus {
     border: 1px solid white;
     transform: scale(1.1);
 }
@@ -189,7 +190,8 @@ table {
 }
 
 /* Hover effect for table cells */
-.howtoplay-content td:hover {
+/* Active and Focus for mobile */
+.howtoplay-content td:hover, .howtoplay-content td:active, .howtoplay-content td:focus {
     border: 1px solid white;
     transform: scale(1.1);
 }

@@ -60,7 +60,8 @@ body {
     transition: 0.2s;
 }
 
-.header-logo > h1 > a:hover {
+/* Active and Focus for mobile */
+.header-logo > h1 > a:hover, .header-logo > h1 > a:active, .header-logo > h1 > a:focus {
     text-shadow: 0 0 5px white;
 }
 
@@ -145,7 +146,8 @@ body {
     display: none;
 }
 
-.header-nav-dropdown:hover .header-nav-dropdown-content {
+/* Active and Focus for mobile */
+.header-nav-dropdown:hover .header-nav-dropdown-content, .header-nav-dropdown:active .header-nav-dropdown-content, .header-nav-dropdown:focus .header-nav-dropdown-content {
     display: block;
 }
 
@@ -171,7 +173,8 @@ body {
     display: none;
 }
 
-.header-nav-menu:hover .header-nav-menu-content {
+/* Active and Focus for mobile */
+.header-nav-menu:hover .header-nav-menu-content, .header-nav-menu:active .header-nav-menu-content, .header-nav-menu:focus .header-nav-menu-content {
     display: flex;
 }
 
@@ -199,7 +202,8 @@ body {
     display: none;
 }
 
-.header-nav-menu-dropdown:hover .header-nav-menu-dropdown-content {
+/* Active and Focus for mobile */
+.header-nav-menu-dropdown:hover .header-nav-menu-dropdown-content, .header-nav-menu-dropdown:active .header-nav-menu-dropdown-content, .header-nav-menu-dropdown:focus .header-nav-menu-dropdown-content {
     display: flex;
 }
 
@@ -242,7 +246,8 @@ body {
     display: none;
 }
 
-.header-nav-dropdown-content-nav-item:hover .header-nav-dropdown-content-nav-item-content {
+/* Active and Focus for mobile */
+.header-nav-dropdown-content-nav-item:hover .header-nav-dropdown-content-nav-item-content, .header-nav-dropdown-content-nav-item:active .header-nav-dropdown-content-nav-item-content, .header-nav-dropdown-content-nav-item:focus .header-nav-dropdown-content-nav-item-content {
     display: block;
 }
 
@@ -283,7 +288,8 @@ body {
     display: none;
 }
 
-.header-nav-menu-dropdown-content-nav-item:hover .header-nav-menu-dropdown-content-nav-item-content {
+/* Active and Focus for mobile */
+.header-nav-menu-dropdown-content-nav-item:hover .header-nav-menu-dropdown-content-nav-item-content, .header-nav-menu-dropdown-content-nav-item:active .header-nav-menu-dropdown-content-nav-item-content, .header-nav-menu-dropdown-content-nav-item:focus .header-nav-menu-dropdown-content-nav-item-content {
     display: block;
 }
 
@@ -389,7 +395,8 @@ html::-webkit-scrollbar-thumb {
     font-weight: 700;
 }
 
-.start-actions > a:hover {
+/* Active and Focus for mobile */
+.start-actions > a:hover, .start-actions > a:active, .start-actions > a:focus {
     box-shadow: 0 0 10px gold;
 }
 
@@ -585,7 +592,8 @@ section:first-child {
     font-weight: 700;
 }
 
-.currentgames-content-item a:hover {
+/* Active and Focus for mobile */
+.currentgames-content-item a:hover, .currentgames-content-item a:active, .currentgames-content-item a:focus {
     box-shadow: 0 0 10px gold;
 }
 
@@ -639,7 +647,8 @@ section:first-child {
     border: none;
 }
 
-.kontakt-content form > button:hover {
+/* Active and Focus for mobile */
+.kontakt-content form > button:hover, .kontakt-content form > button:active, .kontakt-content form > button:focus {
     box-shadow: 0 0 10px gold;
 }
 
@@ -681,7 +690,8 @@ section:first-child {
     transition: 0.2s;
 }
 
-.footer-content nav a:hover {
+/* Active and Focus for mobile */
+.footer-content nav a:hover, .footer-content nav a:active, .footer-content nav a:focus {
     opacity: 0.7;
 }
 
