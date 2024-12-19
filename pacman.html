@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Specifies the character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Ensures the page scales correctly on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links an external stylesheet for page styling -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/games.css">
+    <!-- Sets the favicon of the page -->
+    <link rel="icon" type="image/svg+xml" href="./assets/img/NG_Logo.svg">
+    <!-- Link for the Icons used in these documents -->
+    <link href="./assets/ionicons/ionicons.css" rel="stylesheet" type="text/css">
+    <!-- Sets the title of the webpage -->
+    <title>NostalGames - Pacman</title>
+</head>
+<body id="pacmansite">
+    <canvas id="pacman"></canvas>
+    <!-- Header section: Contains the logo and main navigation -->
+    <header class="header">
+        <!-- Displays the logo as an image -->
+        <div class="header-logo">
+			<img src="./assets/img/pacman-logo.png" alt="NostalGames Logo">
+            <h1><a href="./index.html">NostalGames</a></h1>
+        </div>
+        <!-- Navigation links to various sections of the site -->
+        <nav class="header-nav">
+            <a href="./index.html"><i class="ion-android-home"></i> Home</a>
+            <!-- Dropdown menu for "Games" -->
+            <div class="header-nav-dropdown">
+                <p><i class="ion-arrow-down-b"></i> Games</p>
+
+                <div class="header-nav-dropdown-content">
+                    <!-- Links to individual game pages -->
+                    <nav class="header-nav-dropdown-content-nav">
+                        <div class="header-nav-dropdown-content-nav-item">
+                            <p>Action <i class="ion-arrow-right-b"></i></p>
+                            <div class="header-nav-dropdown-content-nav-item-content">
+                                <a href="./streetfighter.html">Street Fighter</a>
+                            </div>
+                        </div>
+                        <div class="header-nav-dropdown-content-nav-item">
+                            <p>Adventure <i class="ion-arrow-right-b"></i></p>
+                            <div class="header-nav-dropdown-content-nav-item-content">
+                                <a href="./index.html">Soon 👀</a>
+                            </div>
+                        </div>
+                        <div class="header-nav-dropdown-content-nav-item">
+                            <p>Rollenspiel <i class="ion-arrow-right-b"></i></p>
+                            <div class="header-nav-dropdown-content-nav-item-content">
+                                <a href="./index.html">Soon 👀</a>
+                            </div>
+                        </div>
+                        <div class="header-nav-dropdown-content-nav-item">
+                            <p>Strategie <i class="ion-arrow-right-b"></i></p>
+                            <div class="header-nav-dropdown-content-nav-item-content">
+                                <a href="./index.html">Soon 👀</a>
+                            </div>
+                        </div>
+                        <div class="header-nav-dropdown-content-nav-item">
+                            <p>Sonstige <i class="ion-arrow-right-b"></i></p>
+                            <div class="header-nav-dropdown-content-nav-item-content">
+                                <a href="./tetris.html">Tetris</a>
+                                <a href="./pacman.html">Pacman</a>
+                            </div>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+            <!-- Link to the timeline page -->
+            <a href="./timeline.html"><i class="ion-ios-time"></i> Timeline</a>
+            <!-- Link to the contact section -->
+            <a href="./index.html#kontakt"><i class="ion-android-mail"></i> Kontakt</a>
+            <!-- Search bar -->
+            <div class="header-nav-input">
+                <i class="ion-android-search"></i>
+                <input placeholder="Suche...">
+            </div>
+        </nav>
+        <!-- Placeholder for dropdown -->
+        <div class="placeholder">
+            <i class="ion-android-search"></i>
+            
+            <div class="header-nav-menu">
+                <i class="ion-android-menu"></i>
+
+                <div class="header-nav-menu-content">
+                    <a href="./index.html"><i class="ion-android-home"></i> Home</a>
+                    <!-- Dropdown menu for "Games" -->
+                    <div class="header-nav-menu-dropdown">
+                        <p><i class="ion-arrow-down-b"></i> Games</p>
+        
+                        <div class="header-nav-menu-dropdown-content">
+                            <!-- Links to individual game pages -->
+                            <nav class="header-nav-menu-dropdown-content-nav">
+                                <!-- Nav item -->
+                                <div class="header-nav-menu-dropdown-content-nav-item">
+                                    <p><i class="ion-arrow-left-b"></i> Action</p>
+                                    <div class="header-nav-menu-dropdown-content-nav-item-content">
+                                        <a href="./streetfighter.html">Street Fighter</a>
+                                    </div>
+                                </div>
+                                <!-- Nav item -->
+                                <div class="header-nav-menu-dropdown-content-nav-item">
+                                    <p><i class="ion-arrow-left-b"></i> Adventure</p>
+                                    <div class="header-nav-menu-dropdown-content-nav-item-content">
+                                        <a href="./index.html">Soon 👀</a>
+                                    </div>
+                                </div>
+                                <!-- Nav item -->
+                                <div class="header-nav-menu-dropdown-content-nav-item">
+                                    <p><i class="ion-arrow-left-b"></i> Rollenspiel</p>
+                                    <div class="header-nav-menu-dropdown-content-nav-item-content">
+                                        <a href="./index.html">Soon 👀</a>
+                                    </div>
+                                </div>
+                                <!-- Nav item -->
+                                <div class="header-nav-menu-dropdown-content-nav-item">
+                                    <p><i class="ion-arrow-left-b"></i> Strategie</p>
+                                    <div class="header-nav-menu-dropdown-content-nav-item-content">
+                                        <a href="./index.html">Soon 👀</a>
+                                    </div>
+                                </div>
+                                <!-- Nav item -->
+                                <div class="header-nav-menu-dropdown-content-nav-item">
+                                    <p><i class="ion-arrow-left-b"></i> Sonstige</p>
+                                    <div class="header-nav-menu-dropdown-content-nav-item-content">
+                                        <a href="./tetris.html">Tetris</a>
+                                        <a href="./pacman.html">Pacman</a>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- Link to the timeline page -->
+                    <a href="./timeline.html"><i class="ion-ios-time"></i> Timeline</a>
+                    <!-- Link to the contact section -->
+                    <a href="./index.html#kontakt"><i class="ion-android-mail"></i> Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Section to play the game -->
+    <div id="playgame">
+        <a href="#"><i class="ion-close"></i></a>
+        <p>Falls es nicht richtig geladen hat, Seite neu laden!</p>
+        <iframe src="https://funhtml5games.com?embed=pacman" style="width:342px;height:490px;border:none;" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <!-- Main content section -->
+    <main class="main">
+        <!-- Introductory section -->
+        <section id="start">
+            <!-- Main headline and subheadline -->
+            <div class="start-texts">
+                <h2>Pacman<br>Der <span>Kult-Klassiker</span></h2>
+                <img src="./assets/img/retro-pacman.gif" alt="Pacman GIF">
+            </div>
+
+            <!-- Start Actions with bouncing arrow -->
+            <div class="start-actions">
+                <a href="#playgame">Spielen <i class="ion-arrow-right-c"></i></a>
+                <i class="ion-arrow-up-c"></i>
+            </div>
+        </section>
+
+        <!-- Section Quick infos -->
+        <section id="quick">
+            <!-- Section heading -->
+            <header class="section-header">
+                <h4>Quick Infos</h4>
+            </header>
+    
+            <div class="quick-content">
+                <table>
+                    <tr>
+                        <th>Infos</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>Erscheinungsjahr</td>
+                        <td>1980</td>
+                    </tr>
+                    <tr>
+                        <td>Entwickler</td>
+                        <td>Namco</td>
+                    </tr>
+                    <tr>
+                        <td>Genre</td>
+                        <td>Maze-Chase</td>
+                    </tr>
+                    <tr>
+                        <td>Plattformen</td>
+                        <td>Arcade, Atari, NES, PC, Mobilgeräte, u.a.</td>
+                    </tr>
+                    <tr>
+                        <td>Gameplay</td>
+                        <td>Spieler steuert Pac-Man durch ein Labyrinth, frisst Punkte, und entkommt Geistern.</td>
+                    </tr>
+                    <tr>
+                        <td>Besondere Merkmale</td>
+                        <td>Ikonische Geister (Blinky, Pinky, Inky, Clyde); revolutionäre KI-Mechanik.</td>
+                    </tr>
+                    <tr>
+                        <td>Beliebtester Teil</td>
+                        <td>Pac-Man (1980, Original)</td>
+                    </tr>
+                    <tr>
+                        <td>Rekorde</td>
+                        <td>Perfekter Highscore: 3.333.360 Punkte, erreicht von Billy Mitchell.</td>
+                    </tr>
+                    <tr>
+                        <td>Legacy</td>
+                        <td>Kultspiel, eines der bekanntesten Videospiele aller Zeiten.</td>
+                    </tr>
+                </table>
+            </div>
+        </section>        
+
+        <!-- Section providing an introduction -->
+        <section id="einfuehrung">
+            <!-- Section heading -->
+            <header class="section-header">
+                <h4>Einführung</h4>
+            </header>
+
+            <div class="einfuehrung-content">
+                <!-- Picture and caption of the developer -->
+                <figure>
+                    <img src="./assets/img/Toruu_Iwatani.jpg" alt="Toruu Iwatani Picture">
+                    <figcaption>Toruu Iwatani</figcaption>
+                </figure>
+
+                <!-- List with key points about Pacman -->
+                <ul>
+                    <li>Entwickler: Pacman wurde 1980 von Toruu Iwatani in Japan entwickelt.</li>
+                    <li>Spielprinzip: Der Spieler steuert Pacman durch ein Labyrinth, frisst Punkte und muss Geistern ausweichen.</li>
+                    <li>Ziel: Alle Punkte im Labyrinth sammeln, ohne von Geistern erwischt zu werden.</li>
+                    <li>Power-Ups: Durch das Essen von Energiekugeln kann Pacman die Geister für kurze Zeit jagen.</li>
+                    <li>Bedeutung: Pacman ist eines der bekanntesten und einflussreichsten Arcade-Spiele aller Zeiten.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section on how to play the game -->
+        <section id="howtoplay">
+            <!-- Section heading -->
+            <header class="section-header">
+                <h4>How To Play</h4>
+            </header>
+
+            <div class="howtoplay-content">
+                <!-- Controls in a table -->
+                <table>
+                    <tr>
+                        <td><i class="ion-ios-arrow-back"></i> & <i class="ion-ios-arrow-forward"></i></td>
+                        <td><i class="ion-ios-arrow-up"></i> & <i class="ion-ios-arrow-down"></i></td>
+                    </tr>
+                    <tr>
+                        <td>Bewege Pacman nach links und rechts</td>
+                        <td>Bewege Pacman nach oben und unten</td>
+                    </tr>
+                </table>
+
+                <!-- Description and tips -->
+                <div class="howtoplay-content-texts">
+                    <p>Steuere Pacman durch das Labyrinth und sammle Punkte, während du den Geistern ausweichst. Energiekugeln machen die Geister für kurze Zeit angreifbar. Sobald alle Punkte im Labyrinth gesammelt sind, gelangst du ins nächste Level.</p>
+                    <hr>
+                    <h4>Mit jedem Level steigt die Geschwindigkeit und die Herausforderung wird größer!</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section describing the story -->
+        <section id="story">
+            <!-- Section heading -->
+            <header class="section-header">
+                <h4>Story</h4>
+            </header>
+
+            <div class="story-content">
+                <p>Pacman wurde von Toruu Iwatani entwickelt und erstmals 1980 veröffentlicht. Das einfache, aber fesselnde Spielprinzip machte es schnell zu einem weltweiten Phänomen, das die Arcade-Ära prägte. Bis heute ist Pacman ein Symbol für Videospiel-Kultur.</p>
+            </div>
+        </section>
+
+        <!-- Section describing popularity -->
+        <section id="popularity">
+            <!-- Section heading -->
+            <header class="section-header">
+                <h4>Wieso ist es so beliebt</h4>
+            </header>
+
+            <div class="popularity-content">
+                <!-- Reasons for popularity -->
+                <ul>
+                    <li>Intuitives Gameplay: Leicht zu verstehen, aber schwer zu meistern.</li>
+                    <li>Spaß für alle Altersgruppen: Pacman begeistert Jung und Alt gleichermaßen.</li>
+                    <li>Kultige Charaktere: Die Geister Blinky, Pinky, Inky und Clyde sind unvergesslich.</li>
+                    <li>Ewiger Klassiker: Pacman bleibt dank seiner einfachen Spielmechanik zeitlos.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section with a conclusion -->
+        <section id="fazit">
+            <!-- Section heading -->
+            <header class="section-header">
+                <h4>Fazit</h4>
+            </header>
+
+            <div class="fazit-content">
+                <p>Pacman ist mehr als nur ein Spiel – es ist ein Stück Videospielgeschichte. Mit seiner Mischung aus Strategie, Geschicklichkeit und einem unverwechselbaren Design bleibt Pacman ein zeitloser Klassiker, der Spieler jeden Alters begeistert.</p>
+            </div>
+        </section>
+
+        <!-- Section to refresh memories -->
+        <section id="memorys">
+            <!-- Section heading -->
+            <header class="section-header">
+                <h4>Erinnerungen aufrischen</h4>
+            </header>
+
+            <div class="memorys-content">
+                <!-- Images showcasing Pacman history -->
+                <div class="memorys-content-list">
+                    <figure class="memorys-content-list-item" id="pacmanbild1">
+                        <a href="#memorys"></a>
+                        <a href="#pacmanbild1">
+                            <img src="./assets/img/pacman-memorys/1980-pac-man-2.jpg" alt="Pacman Automat">
+                        </a>
+                        <figcaption>Pacman Automat</figcaption>
+                    </figure>
+                    <figure class="memorys-content-list-item" id="pacmanbild2">
+                        <a href="#memorys"></a>
+                        <a href="#pacmanbild2">
+                            <img src="./assets/img/pacman-memorys/pacman.webp" alt="Pacman Mond">
+                        </a>
+                        <figcaption>Etwas Suspekt 👀</figcaption>
+                    </figure>
+                    <figure class="memorys-content-list-item" id="pacmanbild3">
+                        <a href="#memorys"></a>
+                        <a href="#pacmanbild3">
+                            <img src="./assets/img/pacman-memorys/cover.gif" alt="Pacman Gameplay">
+                        </a>
+                        <figcaption>Pacman Gameplay</figcaption>
+                    </figure>
+                    <figure class="memorys-content-list-item" id="pacmanbild4">
+                        <a href="#memorys"></a>
+                        <a href="#pacmanbild4">
+                            <img src="./assets/img/pacman-memorys/download.png" alt="Pacman 80er">
+                        </a>
+                        <figcaption>Pacman 80er</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <!-- Footer heading -->
+        <header class="footer-header">
+            <h1><a href="#">NostalGames</a></h1>
+        </header>
+
+        <!-- Footer navigation -->
+        <div class="footer-content">
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./tetris.html">Tetris</a>
+                <a href="./pacman.html">Pacman</a>
+                <a href="./streetfighter.html">Streetfighter</a>
+            </nav>
+            <nav>
+                <a href="#">Impressum</a>
+                <a href="#">Datenschutz</a>
+                <a href="#">Cookies</a>
+                <a href="#">AGB</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

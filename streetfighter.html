@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Specifies the character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Ensures the page scales correctly on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links an external stylesheet for page styling -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- Links an additional stylesheet for specific game styling -->
+    <link rel="stylesheet" href="./assets/css/games.css">
+    <!-- Sets the favicon of the page -->
+    <link rel="icon" type="image/svg+xml" href="./assets/img/NG_Logo.svg">
+    <!-- Link for the Icons used in these documents -->
+    <link href="./assets/ionicons/ionicons.css" rel="stylesheet" type="text/css">
+    <!-- Sets the title of the webpage -->
+    <title>NostalGames - Streetfighter</title>
+</head>
+<body>
+    <canvas id="streetfighter"></canvas>
+    <!-- Header section: Contains the logo and main navigation -->
+    <header class="header">
+        <!-- Displays the logo as an image -->
+        <div class="header-logo">
+			<img src="./assets/img/streetfighter-logo.png" alt="NostalGames Logo">
+            <h1><a href="./index.html">NostalGames</a></h1>
+        </div>
+        <!-- Navigation links to various sections of the site -->
+        <nav class="header-nav">
+            <a href="./index.html"><i class="ion-android-home"></i> Home</a>
+            <!-- Dropdown menu for "Games" -->
+            <div class="header-nav-dropdown">
+                <p><i class="ion-arrow-down-b"></i> Games</p>
+
+                <div class="header-nav-dropdown-content">
+                    <!-- Links to individual game pages -->
+                    <nav class="header-nav-dropdown-content-nav">
+                        <!-- Nav item -->
+                        <div class="header-nav-dropdown-content-nav-item">
+                            <p>Action <i class="ion-arrow-right-b"></i></p>
+                            <div class="header-nav-dropdown-content-nav-item-content">
+                                <a href="./streetfighter.html">Street Fighter</a>
+                            </div>
+                        </div>
+                        <!-- Nav item -->
+                        <div class="header-nav-dropdown-content-nav-item">
+                            <p>Adventure <i class="ion-arrow-right-b"></i></p>
+                            <div class="header-nav-dropdown-content-nav-item-content">
+                                <a href="./index.html">Soon 👀</a>
+                            </div>
+                        </div>
+                        <!-- Nav item -->
+                        <div class="header-nav-dropdown-content-nav-item">
+                            <p>Rollenspiel <i class="ion-arrow-right-b"></i></p>
+                            <div class="header-nav-dropdown-content-nav-item-content">
+                                <a href="./index.html">Soon 👀</a>
+                            </div>
+                        </div>
+                        <!-- Nav item -->
+                        <div class="header-nav-dropdown-content-nav-item">
+                            <p>Strategie <i class="ion-arrow-right-b"></i></p>
+                            <div class="header-nav-dropdown-content-nav-item-content">
+                                <a href="./index.html">Soon 👀</a>
+                            </div>
+                        </div>
+                        <!-- Nav item -->
+                        <div class="header-nav-dropdown-content-nav-item">
+                            <p>Sonstige <i class="ion-arrow-right-b"></i></p>
+                            <div class="header-nav-dropdown-content-nav-item-content">
+                                <a href="./tetris.html">Tetris</a>
+                                <a href="./pacman.html">Pacman</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Link to the timeline page -->
+            <a href="./timeline.html"><i class="ion-ios-time"></i> Timeline</a>
+            <!-- Link to the contact section -->
+            <a href="./index.html#kontakt"><i class="ion-android-mail"></i> Kontakt</a>
+            <!-- Search bar -->
+            <div class="header-nav-input">
+                <i class="ion-android-search"></i>
+                <input placeholder="Suche...">
+            </div>
+        </nav>
+        <!-- Placeholder for dropdown -->
+        <div class="placeholder">
+            <i class="ion-android-search"></i>
+            
+            <div class="header-nav-menu">
+                <i class="ion-android-menu"></i>
+
+                <div class="header-nav-menu-content">
+                    <a href="./index.html"><i class="ion-android-home"></i> Home</a>
+                    <!-- Dropdown menu for "Games" -->
+                    <div class="header-nav-menu-dropdown">
+                        <p><i class="ion-arrow-down-b"></i> Games</p>
+        
+                        <div class="header-nav-menu-dropdown-content">
+                            <!-- Links to individual game pages -->
+                            <nav class="header-nav-menu-dropdown-content-nav">
+                                <!-- Nav item -->
+                                <div class="header-nav-menu-dropdown-content-nav-item">
+                                    <p><i class="ion-arrow-left-b"></i> Action</p>
+                                    <div class="header-nav-menu-dropdown-content-nav-item-content">
+                                        <a href="./streetfighter.html">Street Fighter</a>
+                                    </div>
+                                </div>
+                                <!-- Nav item -->
+                                <div class="header-nav-menu-dropdown-content-nav-item">
+                                    <p><i class="ion-arrow-left-b"></i> Adventure</p>
+                                    <div class="header-nav-menu-dropdown-content-nav-item-content">
+                                        <a href="./index.html">Soon 👀</a>
+                                    </div>
+                                </div>
+                                <!-- Nav item -->
+                                <div class="header-nav-menu-dropdown-content-nav-item">
+                                    <p><i class="ion-arrow-left-b"></i> Rollenspiel</p>
+                                    <div class="header-nav-menu-dropdown-content-nav-item-content">
+                                        <a href="./index.html">Soon 👀</a>
+                                    </div>
+                                </div>
+                                <!-- Nav item -->
+                                <div class="header-nav-menu-dropdown-content-nav-item">
+                                    <p><i class="ion-arrow-left-b"></i> Strategie</p>
+                                    <div class="header-nav-menu-dropdown-content-nav-item-content">
+                                        <a href="./index.html">Soon 👀</a>
+                                    </div>
+                                </div>
+                                <!-- Nav item -->
+                                <div class="header-nav-menu-dropdown-content-nav-item">
+                                    <p><i class="ion-arrow-left-b"></i> Sonstige</p>
+                                    <div class="header-nav-menu-dropdown-content-nav-item-content">
+                                        <a href="./tetris.html">Tetris</a>
+                                        <a href="./pacman.html">Pacman</a>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- Link to the timeline page -->
+                    <a href="./timeline.html"><i class="ion-ios-time"></i> Timeline</a>
+                    <!-- Link to the contact section -->
+                    <a href="./index.html#kontakt"><i class="ion-android-mail"></i> Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Embedded game section -->
+    <div id="playgame">
+        <a href="#"><i class="ion-close"></i></a>
+        <p>Falls es nicht richtig geladen hat, Seite neu laden!</p>
+        <!-- Iframe to load the online Streetfighter game -->
+        <iframe src="https://streetfighteronline.com" width="600px" height="600px" scrolling="no" frameborder="0"></iframe>
+    </div>
+
+    <!-- Main content section -->
+    <main class="main">
+        <!-- Introductory section -->
+        <section id="start">
+            <!-- Main headline and image -->
+            <div class="start-texts">
+                <h2>Streetfighter<br>Der <span>Klassiker</span> der Kampfspiele</h2>
+                <img src="./assets/img/retro-streetfighter.gif">
+            </div>
+
+            <!-- Call-to-action buttons -->
+            <div class="start-actions">
+                <a target="_blank" href="https://www.retrogames.cz/play_304-SNES.php">Spielen <i class="ion-arrow-right-c"></i></a>
+                <i class="ion-arrow-up-c"></i>
+            </div>
+        </section>
+
+        <!-- Section Quick infos -->
+        <section id="quick">
+            <!-- Section heading -->
+            <header class="section-header">
+                <h4>Quick Infos</h4>
+            </header>
+    
+            <div class="quick-content">
+                <table>
+                    <tr>
+                        <th>Infos</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>Erscheinungsjahr</td>
+                        <td>1987</td>
+                    </tr>
+                    <tr>
+                        <td>Entwickler</td>
+                        <td>Capcom</td>
+                    </tr>
+                    <tr>
+                        <td>Genre</td>
+                        <td>Fighting Game</td>
+                    </tr>
+                    <tr>
+                        <td>Plattformen</td>
+                        <td>Arcade, SNES, PlayStation, PC, u.a.</td>
+                    </tr>
+                    <tr>
+                        <td>Gameplay</td>
+                        <td>1v1-Kämpfe mit Fokus auf Spezialattacken und Combos.</td>
+                    </tr>
+                    <tr>
+                        <td>Besondere Merkmale</td>
+                        <td>Einführung von ikonischen Moves wie Hadouken und Shoryuken; große Charaktervielfalt.</td>
+                    </tr>
+                    <tr>
+                        <td>Beliebtester Teil</td>
+                        <td>Street Fighter II (1991)</td>
+                    </tr>
+                    <tr>
+                        <td>Rekorde</td>
+                        <td>Höchste E-Sport-Serie: 35 Siege von Daigo Umehara.</td>
+                    </tr>
+                    <tr>
+                        <td>Legacy</td>
+                        <td>Pionier des Fighting-Game-Genres; prägt den E-Sport bis heute.</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        
+
+        <!-- Section providing game introduction -->
+        <section id="einfuehrung">
+            <!-- Section heading -->
+            <header class="section-header">
+                <h4>Einführung</h4>
+            </header>
+
+            <div class="einfuehrung-content">
+                <!-- Creator information -->
+                <figure>
+                    <img src="./assets/img/Yoshiki_Okamoto.jpg" alt="Streetfighter Creator Picture">
+                    <figcaption>Yoshiki Okamoto</figcaption>
+                </figure>
+
+                <!-- Key information about the game -->
+                <ul>
+                    <li>Entwickler: Streetfighter wurde 1987 von Capcom entwickelt.</li>
+                    <li>Spielprinzip: Spieler treten in Eins-gegen-Eins-Kämpfen gegeneinander an, um ihren Gegner durch geschickte Bewegungen und Angriffe zu besiegen.</li>
+                    <li>Ziel: Das Ziel ist es, zwei von drei Runden zu gewinnen, indem man die Lebensanzeige des Gegners auf null reduziert.</li>
+                    <li>Bedeutung: Streetfighter gilt als Wegbereiter des modernen Kampfspiel-Genres und hat unzählige Nachfolger inspiriert.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- How-to-play section -->
+        <section id="howtoplay">
+            <!-- Section heading -->
+            <header class="section-header">
+                <h4>How To Play</h4>
+            </header>
+
+            <div class="howtoplay-content">
+                <!-- Game control table -->
+                <table>
+                    <tr>
+                        <td><i class="ion-ios-arrow-back"></i> & <i class="ion-ios-arrow-forward"></i></td>
+                        <td><i class="ion-ios-arrow-up"></i></td>
+                        <td><i class="ion-ios-arrow-down"></i></td>
+                        <td><span>P</span></td>
+                    </tr>
+                    <tr>
+                        <td>Bewege deinen Charakter</td>
+                        <td>Springen</td>
+                        <td>Ducken</td>
+                        <td>Schlagen</td>
+                    </tr>
+                </table>
+
+                <!-- Additional gameplay tips -->
+                <div class="howtoplay-content-texts">
+                    <p>Streetfighter bietet eine Vielzahl von Charakteren mit individuellen Bewegungen und Spezialangriffen. Spieler können Tastenkombinationen verwenden, um Combos und Spezialattacken auszuführen, die dem Gegner zusetzen. Jedes Match erfordert Strategie und schnelle Reflexe.</p>
+                    <hr>
+                    <h4>Beherrsche Spezialtechniken, um den Kampf für dich zu entscheiden!</h4>    
+                </div>
+            </div>
+        </section>
+
+        <!-- Game story section -->
+        <section id="story">
+            <!-- Section heading -->
+            <header class="section-header">
+                <h4>Story</h4>
+            </header>
+
+            <div class="story-content">
+                <!-- Brief history of the game -->
+                <p>Streetfighter begann als Arcade-Spiel und wurde schnell zu einem der bekanntesten Titel in der Videospielgeschichte. Mit seinen ikonischen Charakteren wie Ryu und Ken sowie revolutionärer Spielmechanik hat es weltweit Kultstatus erreicht.</p>
+            </div>
+        </section>
+
+        <!-- Section explaining game popularity -->
+        <section id="popularity">
+            <!-- Section heading -->
+            <header class="section-header">
+                <h4>Wieso ist es so beliebt</h4>
+            </header>
+
+            <div class="popularity-content">
+                <ul>
+                    <li>Komplexe, aber zugängliche Spielmechanik: Für Einsteiger und Profis geeignet.</li>
+                    <li>Legendäre Charaktere: Jeder Charakter hat seine eigene Geschichte und Kampfkunst.</li>
+                    <li>Spannende Turniere: Streetfighter ist auf internationalen Wettkämpfen präsent.</li>
+                    <li>Strategische Tiefe: Spieler müssen ihre Gegner lesen und taktisch vorgehen.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Summary section -->
+        <section id="fazit">
+            <!-- Section heading -->
+            <header class="section-header">
+                <h4>Fazit</h4>
+            </header>
+
+            <div class="fazit-content">
+                <p>Streetfighter ist ein Meilenstein der Kampfspielgeschichte und begeistert seit Jahrzehnten Spieler weltweit. Mit seiner Mischung aus Strategie, Technik und spannenden Charakteren bleibt es ein unverzichtbarer Titel für jeden Gamer.</p>
+            </div>
+        </section>
+
+        <!-- Memory-refreshing section -->
+        <section id="memorys">
+            <!-- Section heading -->
+            <header class="section-header">
+                <h4>Erinnerungen aufrischen</h4>
+            </header>
+
+            <div class="memorys-content">
+                <!-- Memory gallery -->
+                <div class="memorys-content-list">
+                    <figure class="memorys-content-list-item" id="streetfighterbild1">
+                        <a href="#memorys"></a>
+                        <a href="#streetfighterbild1">
+                            <img src="./assets/img/streetfighter-memorys/download.jpg" alt="Streetfighter Fight">
+                        </a>
+                        <figcaption>Street Fighter Fight</figcaption>
+                    </figure>
+                    <figure class="memorys-content-list-item" id="streetfighterbild2">
+                        <a href="#memorys"></a>
+                        <a href="#streetfighterbild2">
+                            <img src="./assets/img/streetfighter-memorys/hq720.jpg" alt="Streetfighter Uppercut">
+                        </a>
+                        <figcaption>Streetfighter Uppercut</figcaption>
+                    </figure>
+                    <figure class="memorys-content-list-item" id="streetfighterbild3">
+                        <a href="#memorys"></a>
+                        <a href="#streetfighterbild3">
+                            <img src="./assets/img/streetfighter-memorys/images (1).jpg" alt="Streetfighter Punch">
+                        </a>
+                        <figcaption>Street Fighter Punch</figcaption>
+                    </figure>
+                    <figure class="memorys-content-list-item" id="streetfighterbild4">
+                        <a href="#memorys"></a>
+                        <a href="#streetfighterbild4">
+                            <img src="./assets/img/streetfighter-memorys/images.jpg" alt="Streetfighter Abilitys">
+                        </a>
+                        <figcaption>Street Fighter Ability</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Footer heading -->
+        <header class="footer-header">
+            <h1><a href="#">NostalGames</a></h1>
+        </header>
+
+        <!-- Footer navigation -->
+        <div class="footer-content">
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./tetris.html">Tetris</a>
+                <a href="./pacman.html">Pacman</a>
+                <a href="./streetfighter.html">Streetfighter</a>
+            </nav>
+            <nav>
+                <a href="#">Impressum</a>
+                <a href="#">Datenschutz</a>
+                <a href="#">Cookies</a>
+                <a href="#">AGB</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

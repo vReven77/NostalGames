@@ -1,0 +1,14 @@
+Für Hex-Codes und RGB:
+https://www.rapidtables.com/web/color/RGB_Color.html
+
+Für die ganzen Icons nutze ich:
+https://fontawesome.com/
+
+Der Inhalt von Tetris:
+ChatGPT (Das Meiste umgeändert. Nur Struktur verwendet) Prompt: kannst du mir eine Webseiten inhalt machen über Tetris. Es soll aufgebaut sind wie eine moderne Webseite auf Deutsch
+
+Der Inhalt von Pacman:
+ChatGPT Prompt: Genau dasselbe nur für Pacman
+
+Der Inhalt von Streetfighter:
+ChatGPT Prompt: Genau dasselbe nur für Streetfighter
